@@ -1,0 +1,67 @@
+\documentclass{article}
+	\def\papertitle{The Dark Side of Light}
+	\def\authors{John, Ammy, Mike, Stefan}
+	\def\journal{Some Journal}
+	\def\doi{12345}
+\input{./templates/AR_to_RC.tex}
+
+\vspace{12 mm}
+Dear Editor-in-Chief, Associate Editor, and Reviewers:
+
+\vspace{3 mm}
+%\hyperref[sec:intro]{Section 1}
+%\nameref{sec:intro}
+Thank you for the opportunity to revise our manuscript. We greatly appreciate the reviewers' constructive feedback, which has notably improved the quality and presentation of the paper.
+
+\vspace{3 mm}
+We have submitted the following documents: 
+
+\vspace{3 mm}
+\begin{itemize} \item \textbf{A response letter addressing the reviewers' comments point by point.} For ease of review, each comment is presented in sequence with our corresponding responses and details of the revisions. Since figures, tables, and algorithms may be referenced in both the manuscript and the letter, we apply distinct labels to differentiate them. For instance, we use ``Fig. XX (manuscript)'' to refer to figures in the manuscript and ``Fig. XX (letter)'' for those in the response letter. Similarly, tables and algorithms are labeled as ``Table XX (manuscript)'' or ``Algorithm XX (letter),'' respectively, to ensure clarity.
+	
+	\item \textbf{A diff file with highlighted changes.} Revisions are marked as follows: \emph{\red{red}}  for \hyperref[sec:reviewer1]{Reviewer 1}, \emph{\orange{orange}} for \hyperref[sec:reviewer2]{Reviewer 2}, \emph{\textcolor{blue}{blue}} for \hyperref[sec:reviewer3]{Reviewer 5}. Modifications addressing multiple reviewers are shown in \emph{\green{green}}, with \hyperref[sec:additional]{additional improvements} highlighted in \emph{\brown{brown}}. \item \textbf{A clean updated manuscript (PDF).} 
+\end{itemize}
+{\bf We sincerely thank you for your constructive comments which have greatly improved the quality of this paper!}
+
+\vspace{6 mm}
+
+Yours sincerely,
+\vspace{6 mm}
+
+John, Ammy, Mike, Stefan%
+\newpage
+ 
+\tableofcontents
+\newpage
+\section{Reviewer \#1}
+\label{sec:reviewer1}
+\subsection{General comment}
+
+\RC Recommendation: Publish in Minor, Required Changes (as noted in the Comments section. This rating may not be assigned for Sensors Letters.)
+
+\AR I do not agree.
+
+\subsection{Concern \#1}
+
+\RC Why the acceleration and the angular velocity in Eq.(6) are modeled as constants should be explained.
+
+\AR Ok, I changed this:
+
+\begin{quote}
+The cat in the box is \DIFdelbegin \DIFdel{dead}\DIFdelend \DIFaddbegin \DIFadd{alive}\DIFaddend .
+\begin{align}
+E &= mc^2 \\
+m\cdot \DIFdelbegin \DIFdel{a=F}\DIFdelend \DIFaddbegin \DIFadd{v=p}\DIFaddend .
+\end{align}
+\end{quote}
+
+\AR*But I actually have no idea what you were talking about.
+
+\section{Reviewer \#2}
+\label{sec:reviewer2}
+\section{Reviewer \#5}
+\label{sec:reviewer5}
+
+\section{Reviewer \#5}
+\label{sec:additional}
+\end{document}
